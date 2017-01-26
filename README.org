@@ -1,0 +1,23 @@
+
+* About
+
+A way to enable and disable code throughout a program without having
+to do too much.  Useful for fault-injection testing.
+
+Works on Linux, and maybe other platforms that use ELF binaries.
+
+Under construction.
+
+* Todo
+- doc: add basic documentation
+- build: out-of-source builds, prob cmake
+- build: dependencies, prob cmake
+- test: automated test
+- feature: add special interfaces for c++ programs, failpoint lambdas
+- feature: support shared libs.  this currently does not collect
+  failpoints in shared objects, would have to do some dlopen stuff
+- feature: support a mini-language to have failpoints be enabled 10%
+  of the time, or off for 5 times then on, etc.  would need to balance
+  this with the failpoint overhead, since ideally we want these in
+  production builds and not having to do separate failpoint/debug
+  enabled builds.

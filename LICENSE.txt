@@ -1,6 +1,12 @@
+Externally maintained libraries used by failpoint are
+  - linker_set.h (from FreeBSD), copyright John D. Polstra and Peter
+    Wemm, Two clause BSD license
+
+The rest of failpoint is licensed as follows:
+
 BSD 3-Clause License
 
-Copyright (c) 2017, Bart Robinson
+Copyright (c) 2017, Bart R. Robinson
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
