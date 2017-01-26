@@ -1,0 +1,23 @@
+
+* todo
+** TODO add basic documentation                                        :doc:
+why
+how to use
+how to build
+how to run test
+** TODO out-of-source builds                                         :build:
+prob cmake
+** TODO build dependencies                                           :build:
+prob cmake
+** TODO automated test                                                :test:
+rather than eyeballing the output
+** TODO add special interfaces for c++ programs                    :feature:
+like failpoint lambdas
+** TODO support shared libs                                        :feature:
+this currently does not collect failpoints in shared objects, would
+have to do some dlopen stuff
+** TODO support a mini-language for enabling failpoints            :feature:
+ e.g. have failpoints be enabled 10% of the time, or off for 5 times
+ then on, etc.  would need to balance this with the failpoint
+ overhead, since ideally we want these in production builds and not
+ having to do separate failpoint/debug enabled builds.
